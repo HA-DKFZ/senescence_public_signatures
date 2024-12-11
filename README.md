@@ -1,4 +1,4 @@
-# Senesence signatures
+# Senescence signatures
 
 Comprehensive list of published senescent signatures and their interconnectivity
 
