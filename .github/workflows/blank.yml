@@ -1,0 +1,33 @@
+name: Update Table from Google Sheet
+
+on:
+  schedule:
+    cron: '0 0 */5 * *' # Runs every 5 days at midnight
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  update-table:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
+
+      - name: Install Dependencies
+        run: pip install pandas requests markdownify
+
+      - name: Fetch Google Sheet and Update Markdown
+        run: |
+          python scripts/auto_load.py
+
+      - name: Commit Changes
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Automated table update from Google Sheet"
+          git push
