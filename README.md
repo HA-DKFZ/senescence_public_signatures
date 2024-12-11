@@ -2,7 +2,6 @@
 
 Comprehensive list of published senescent signatures and their interconnectivity
 
-<!-- START_TABLE -->
 
 | name                  | csv link                                                                                                               | paper                                                                                                |   year | ref link              |
 |:----------------------|:-----------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------|-------:|:----------------------|
@@ -10,5 +9,3 @@ Comprehensive list of published senescent signatures and their interconnectivity
 | Fridman               | [Fridman CSV](https://github.com/HA-DKFZ/senesence_signatures/blob/main/pages/fridman.csv)                             | Critical pathways in cellular senescence and immortalization revealed by gene expression profiling   |   2008 | PubMed                |
 | Fridman immortalised  | [Immortalised CSV](https://github.com/HA-DKFZ/senesence_signatures/blob/main/pages/immortalised.csv)                   | Critical pathways in cellular senescence and immortalization revealed by gene expression profiling   |   2008 | PubMed                |
 | Nat Medicine Diabetes | [Nat Medicine Diabetes CSV](https://github.com/HA-DKFZ/senesence_signatures/blob/main/pages/nat_medicine_diabetes.csv) | Senescence-associated pathways in diabetes explored in-depth                                         |   2024 | Nature Medicine       |
-
-<!-- END_TABLE -->
