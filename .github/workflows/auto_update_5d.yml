@@ -2,7 +2,7 @@ name: Update Table from Google Sheet
 
 on:
   schedule:
-    cron: '0 0 */5 * *' # Runs every 5 days at midnight
+    - cron: '0 0 */5 * *' # Runs every 5 days at midnight
   workflow_dispatch: # Allows manual trigger
 
 jobs:
