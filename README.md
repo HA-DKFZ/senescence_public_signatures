@@ -2,8 +2,7 @@
 
 Comprehensive list of published senescent signatures and their interconnectivity
 
-<!-- START_TABLE --> 
-
+<!-- START_TABLE -->
 | name                  | csv link                                                                                                               | paper                                                                                                |   year | ref link                                                                   |
 |:----------------------|:-----------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------|-------:|:---------------------------------------------------------------------------|
 | Senmayo               | [Senmayo csv](https://github.com/HA-DKFZ/senesence_signatures/blob/main/pages/senmayo.csv)                             | A new gene set identifies senescent cells and predicts senescence-associated pathways across tissues |   2022 | [Nature communication](https://www.nature.com/articles/s41467-022-32552-1) |
