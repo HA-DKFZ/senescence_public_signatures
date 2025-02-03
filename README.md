@@ -2,7 +2,12 @@
 
 Comprehensive list of published senescent signatures and their interconnectivity
 
-<!-- START_TABLE --> 
+<!-- 
+The markers below are used by GitHub Actions to update the table. 
+They are inside an HTML comment to prevent rendering issues in GitHub Pages.
+-->
+
+<!--START_TABLE--><div markdown="1">
 
 | name                  | csv link                                                                                                               | paper                                                                                                |   year | ref link                                           |
 |:----------------------|:-----------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------|-------:|:---------------------------------------------------|
@@ -15,4 +20,4 @@ Comprehensive list of published senescent signatures and their interconnectivity
 | Heart senescence 1    | [Heart fb1 csv](https://github.com/HA-DKFZ/senesence_signatures/blob/main/pages/heart_sen_fb1.csv)                     | nan                                                                                                  |    nan | nan                                                |
 | Heart senescence 2    | [Heart fb2 csv](https://github.com/HA-DKFZ/senesence_signatures/blob/main/pages/heart_sen_fb2.csv)                     | nan                                                                                                  |    nan | nan                                                |
 
-<!-- END_TABLE -->
+</div><!--END_TABLE-->
