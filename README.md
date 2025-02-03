@@ -2,7 +2,7 @@
 
 Comprehensive list of published senescent signatures and their interconnectivity
 
-<div markdown="1">
+<!--START_TABLE--><div markdown="1">
 
 | name                  | csv link                                                                                                               | paper                                                                                                |   year | ref link                                           |
 |:----------------------|:-----------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------|-------:|:---------------------------------------------------|
@@ -16,3 +16,4 @@ Comprehensive list of published senescent signatures and their interconnectivity
 | Heart senescence 2    | [Heart fb2 csv](https://github.com/HA-DKFZ/senesence_signatures/blob/main/pages/heart_sen_fb2.csv)                     | nan                                                                                                  |    nan | nan                                                |
 
 </div>
+<!--END_TABLE-->
