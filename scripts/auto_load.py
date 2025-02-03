@@ -8,18 +8,26 @@ data = pd.read_csv(url)
 # Convert DataFrame to Markdown Table
 markdown_table = data.to_markdown(index=False)
 
-# Update the Markdown File
-with open("README.md", "r") as file:
+# Read README.md
+readme_path = "README.md"
+with open(readme_path, "r") as file:
     lines = file.readlines()
 
-# Replace existing table (assuming it's between specific markers)
-start_marker = "<!-- START_TABLE -->"
-end_marker = "<!-- END_TABLE -->"
+# Define markers
+start_marker = "<!-- START_TABLE -->\n"
+end_marker = "<!-- END_TABLE -->\n"
 
-start_index = lines.index(f"{start_marker}\n") + 1
-end_index = lines.index(f"{end_marker}\n")
+if start_marker not in lines or end_marker not in lines:
+    print("Markers not found in README.md. Add them manually.")
+    exit(1)
 
+# Locate markers and update table
+start_index = lines.index(start_marker) + 1
+end_index = lines.index(end_marker)
 updated_lines = lines[:start_index] + [markdown_table + "\n"] + lines[end_index:]
 
-with open("README.md", "w") as file:
+# Write back to README.md
+with open(readme_path, "w") as file:
     file.writelines(updated_lines)
+
+print("README.md updated successfully!")
