@@ -17,9 +17,9 @@ with open(readme_path, "r") as file:
 start_marker = "<!-- START_TABLE -->"
 end_marker = "<!-- END_TABLE -->"
 
-if start_marker not in lines or end_marker not in lines:
-    print("Markers not found in README.md. Add them manually.")
-    exit(1)
+# if start_marker not in lines or end_marker not in lines:
+#     print("Markers not found in README.md. Add them manually.")
+#     exit(1)
 
 # Locate markers and update table
 start_index = next(i for i, line in enumerate(lines) if start_marker in line) + 1
